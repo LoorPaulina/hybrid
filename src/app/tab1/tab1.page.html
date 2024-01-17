@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Box Memory
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,61 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Box Memory</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-searchbar animated="true" placeholder="Animated"></ion-searchbar>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="title-reminder-card">Your Reminders for Today</ion-card-title>
+    </ion-card-header>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4" size-md="4" id="left">
+          <!-- Contenido para la primera celda del grid -->
+          <p>1 of 4 completed</p>
+          <ion-button fill="clear">Show More</ion-button>
+        </ion-col>
+        <ion-col size="4" size-md="4" id="img-reminder">
+          <!-- Imagen a la derecha en pantallas medianas y grandes -->
+          <ion-img src="assets/img/gato.png"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    
+  </ion-card>
+
+  <div id="container">
+  <h5 id="container-reminders">Reminders for Today</h5>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Reminder 1</ion-card-subtitle>
+    </ion-card-header>
+      <div class="reminder-list">
+        <img src="assets/img/laundry.png" class="icons">
+        <div class="reminder-list-2">
+          <p id="title-reminder">Put the clothes in the washing machine</p>
+          <p>10:00 AM</p>
+        </div>
+      </div>
+    
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Reminder 2</ion-card-subtitle>
+    </ion-card-header>
+    <div class="reminder-list">
+      <img src="assets/img/laundry.png" class="icons">
+      <div class="reminder-list-2">
+        <p id="title-reminder">Put the clothes in the washing machine</p>
+        <p>10:00 AM</p>
+      </div>
+    </div>
+  </ion-card>
+  <ion-card></ion-card>
+</div>
 </ion-content>
